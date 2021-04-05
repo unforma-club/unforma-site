@@ -1,0 +1,9 @@
+# files
+.env
+.env*
+cors.json
+yarn.lock
+
+# directories
+node_modules
+.vercel

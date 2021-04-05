@@ -1,0 +1,85 @@
+:root {
+    --A1: #ffffff;
+    --A2: #eeeeee;
+    --A3: #dddddd;
+    --A4: #cccccc;
+    --A5: #bbbbbb;
+    --A6: #aaaaaa;
+    --A7: #999999;
+    --A8: #888888;
+    --A9: #777777;
+    --A10: #666666;
+    --A11: #555555;
+    --A12: #444444;
+    --A13: #333333;
+    --A14: #222222;
+    --A15: #111111;
+    --A16: #000000;
+
+    --accents-1: var(--A1);
+    --accents-2: var(--A2);
+    --accents-3: var(--A3);
+    --accents-4: var(--A4);
+    --accents-5: var(--A5);
+    --accents-6: var(--A6);
+    --accents-7: var(--A7);
+    --accents-8: var(--A8);
+    --accents-9: var(--A9);
+    --accents-10: var(--A10);
+    --accents-11: var(--A11);
+    --accents-12: var(--A12);
+    --accents-13: var(--A13);
+    --accents-14: var(--A14);
+    --accents-15: var(--A15);
+    --accents-16: var(--A16);
+
+    --background: var(--accents-2);
+    --foreground: var(--accents-13);
+    --geist-unforma: #90ee90;
+
+    --font-sans: "Degular", sans-serif;
+    --font-serif: "Times New Roman", serif;
+    --font-mono: "JetBrains Mono", monospace;
+
+    --footer-height: 100vh;
+}
+
+[data-theme="light"] {
+    --accents-1: var(--A1);
+    --accents-2: var(--A2);
+    --accents-3: var(--A3);
+    --accents-4: var(--A4);
+    --accents-5: var(--A5);
+    --accents-6: var(--A6);
+    --accents-7: var(--A7);
+    --accents-8: var(--A8);
+    --accents-9: var(--A9);
+    --accents-10: var(--A10);
+    --accents-11: var(--A11);
+    --accents-12: var(--A12);
+    --accents-13: var(--A13);
+    --accents-14: var(--A14);
+    --accents-15: var(--A15);
+    --accents-16: var(--A16);
+    --geist-unforma: #90ee90;
+}
+
+[data-theme="dark"] {
+    --accents-1: var(--A16);
+    --accents-2: var(--A15);
+    --accents-3: var(--A14);
+    --accents-4: var(--A13);
+    --accents-5: var(--A12);
+    --accents-6: var(--A11);
+    --accents-7: var(--A10);
+    --accents-8: var(--A9);
+    --accents-9: var(--A8);
+    --accents-10: var(--A7);
+    --accents-11: var(--A6);
+    --accents-12: var(--A5);
+    --accents-13: var(--A4);
+    --accents-14: var(--A3);
+    --accents-15: var(--A2);
+    --accents-16: var(--A1);
+    --geist-unforma: #375837;
+}

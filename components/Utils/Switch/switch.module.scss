@@ -1,0 +1,37 @@
+.container {
+    position: relative;
+    height: 100%;
+    cursor: pointer;
+    background-color: var(--accents-3);
+    padding: 0.35rem 0.65rem;
+    border-radius: 5rem;
+    width: 60px;
+
+    &::after {
+        content: "";
+        width: 1.5rem;
+        height: 1.5rem;
+        display: inline-block;
+        position: absolute;
+        top: 0;
+
+        transition: transform 300ms ease;
+        border-radius: 100%;
+    }
+    &[data-active="false"] {
+        &::after {
+            left: 0;
+            background-color: magenta;
+        }
+    }
+    &[data-active="true"] {
+        &::after {
+            background-color: cyan;
+            right: 0;
+        }
+    }
+
+    input {
+        appearance: none;
+    }
+}

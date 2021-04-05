@@ -1,0 +1,88 @@
+@mixin shadowBase {
+    box-shadow: 0rem 0rem 0.2rem 0 var(--accents-3);
+}
+@mixin shadowActive {
+    box-shadow: 0rem 0rem 1rem 0 var(--accents-3);
+}
+
+@mixin baseStyle {
+    position: fixed;
+    left: 50%;
+    transform: translate(-50%, 0%);
+    border: 1px solid;
+    border-color: transparent;
+    border-radius: 10rem;
+    display: flex;
+    align-items: center;
+    white-space: nowrap;
+    // padding-right: 1rem;
+    padding: 0.25rem;
+    gap: 0.25rem;
+    z-index: 1001;
+    background-color: var(--accents-2);
+    transition: box-shadow 300ms ease, border-color 300ms ease;
+    @include shadowBase();
+
+    // &:hover {
+    //     box-shadow: 0rem 0rem 1.5rem 0.25rem var(--accents-3);
+    // }
+    &[data-scroll="true"] {
+        border-color: var(--accents-3);
+        @include shadowActive();
+    }
+
+    a,
+    button {
+        text-decoration: none;
+        color: currentColor;
+        padding: 0.35rem 0.65rem;
+        margin: 0;
+        background-color: inherit;
+        color: inherit;
+        border-radius: inherit;
+        position: relative;
+        border: 1px solid;
+        border-color: transparent;
+        font-family: inherit;
+        font-size: inherit;
+        outline: none;
+        transition: background-color 300ms ease, box-shadow 300ms ease, border-color 300ms ease;
+        cursor: pointer;
+        // @include shadowBase();
+        box-shadow: 0 0 0 0 transparent;
+
+        &:hover {
+            // background-color: var(--accents-3);
+            @include shadowActive();
+            z-index: 10;
+        }
+        &[aria-current="true"] {
+            @include shadowActive();
+            z-index: 10;
+            // background-color: var(--accents-3);
+            border-color: var(--accents-3);
+            &[data-dynamic="true"] {
+                // background-color: var(--accents-4);
+                // @include shadowActive();
+                &::after {
+                    content: "●";
+                    position: absolute;
+                    top: 0rem;
+                    right: 0rem;
+                    transform: translate(25%, -25%);
+                    color: magenta;
+                }
+            }
+        }
+    }
+}
+
+.top {
+    @include baseStyle();
+    top: 2rem;
+}
+.bottom {
+    @include baseStyle();
+    bottom: 2rem;
+    // overflow: hidden;
+}
