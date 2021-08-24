@@ -2,6 +2,7 @@
 .env
 .env*
 cors.json
+.DS_Store
 
 # directories
 node_modules
