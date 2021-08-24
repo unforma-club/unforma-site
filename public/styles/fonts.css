@@ -1,0 +1,8 @@
+/* Space Grotesk Variable */
+@font-face {
+	font-family: "Space Grotesk";
+	src: url("/fonts/space-grotesk/SpaceGrotesk-VariableFont_wght.ttf");
+	font-style: normal;
+	font-weight: 300 700;
+	font-display: block;
+}

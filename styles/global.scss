@@ -1,31 +1,34 @@
 @import "./variable.scss";
 
 * {
-    box-sizing: border-box;
-    &::selection {
-        background-color: var(--accents-13);
-        color: var(--accents-2);
-    }
+	box-sizing: border-box;
+	&::selection {
+		background-color: var(--accents-13);
+		color: var(--accents-2);
+	}
 }
 
 body {
-    margin: 0;
-    padding: 0;
-    background-color: var(--background);
-    color: var(--foreground);
-    font-family: var(--font-sans);
+	margin: 0;
+	padding: 0;
+
+	background-color: var(--background);
+	color: var(--foreground);
+
+	font-family: var(--font-sans);
+	font-feature-settings: "ss04";
 }
 
 a {
-    font-weight: 700;
-    color: currentColor;
-    text-decoration: none;
-    &:hover {
-        text-decoration: underline;
-    }
+	font-weight: 700;
+	color: currentColor;
+	text-decoration: none;
+	&:hover {
+		text-decoration: underline;
+	}
 }
 
 #__next {
-    background-color: inherit;
-    color: inherit;
+	background-color: inherit;
+	color: inherit;
 }
