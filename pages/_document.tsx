@@ -14,7 +14,7 @@ export default class MyDocument extends Document {
 					<link
 						rel="stylesheet"
 						type="text/css"
-						href="/styles/fonts.css"
+						href="/styles/global.css"
 						crossOrigin=""
 					/>
 				</Head>

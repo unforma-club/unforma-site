@@ -1,21 +1,5 @@
-@import "./variable.scss";
-
-* {
-	box-sizing: border-box;
-	&::selection {
-		background-color: var(--accents-13);
-		color: var(--accents-2);
-	}
-}
-
 body {
-	margin: 0;
-	padding: 0;
-
-	background-color: var(--background);
-	color: var(--foreground);
-
-	font-family: var(--font-sans);
+	overscroll-behavior: auto none;
 	font-feature-settings: "ss04";
 }
 
