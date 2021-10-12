@@ -15,8 +15,19 @@ export const MenuTop = () => {
 						Unforma®Club
 					</a>
 				</NextLink>
-				<a href="https://unforma.club/ponpub" target="_blank">
+				<a
+					href="https://unforma.club/ponpub"
+					target="_blank"
+					rel="noopener"
+				>
 					Ponpub
+				</a>
+				<a
+					href="https://typetools.unforma.club"
+					target="_blank"
+					rel="noopener"
+				>
+					Typetools
 				</a>
 				<Switch />
 			</div>
