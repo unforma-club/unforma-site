@@ -1,18 +1,18 @@
 body {
-	overscroll-behavior: auto none;
-	font-feature-settings: "ss04";
+    overscroll-behavior: auto none;
+    font-feature-settings: "ss04";
 }
 
 a {
-	font-weight: 700;
-	color: currentColor;
-	text-decoration: none;
-	&:hover {
-		text-decoration: underline;
-	}
+    font-weight: 700;
+    color: currentColor;
+    text-decoration: none;
+    &:hover {
+        text-decoration: underline;
+    }
 }
 
 #__next {
-	background-color: inherit;
-	color: inherit;
+    background-color: inherit;
+    color: inherit;
 }

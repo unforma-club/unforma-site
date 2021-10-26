@@ -1,3 +1,5 @@
+@import "styles/media.scss";
+
 @mixin shadowBase {
     box-shadow: 0rem 0rem 0.2rem 0 var(--accents-3);
 }
@@ -46,7 +48,8 @@
         font-family: inherit;
         font-size: inherit;
         outline: none;
-        transition: background-color 300ms ease, box-shadow 300ms ease, border-color 300ms ease;
+        transition: background-color 300ms ease, box-shadow 300ms ease,
+            border-color 300ms ease;
         cursor: pointer;
         // @include shadowBase();
         box-shadow: 0 0 0 0 transparent;
@@ -80,6 +83,16 @@
 .top {
     @include baseStyle();
     top: 2rem;
+
+    @include media("screen", "<tablet") {
+        flex-wrap: wrap;
+        width: 100%;
+        border: none;
+        background-color: transparent;
+        box-shadow: none;
+        top: 0;
+        padding: var(--grid-gap);
+    }
 }
 .bottom {
     @include baseStyle();
