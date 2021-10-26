@@ -16,7 +16,7 @@ export const MenuTop = () => {
 					</a>
 				</NextLink>
 				<a
-					href="https://unforma.club/ponpub"
+					href="https://ponpub.unforma.club"
 					target="_blank"
 					rel="noopener"
 				>
